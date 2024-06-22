@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Str;
 
+/* Update fil for conneccted to JAWSDB */
 $DATABASE_URL=parse_url('DATABASE_URL');
 
 return [
@@ -45,14 +46,15 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        /* Update host,port,database,username,password pour for */
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => isset($DATABASE_URL['host']) ? $DATABASE_URL['host'] : null,
-            'port' => isset($DATABASE_URL['port']) ? $DATABASE_URL['port'] : null,
-            'database' => isset($DATABASE_URL['path']) ? ltrim( $DATABASE_URL['path'], "/") : null,
-            'username' => isset($DATABASE_URL['user']) ? $DATABASE_URL['user'] : null,
-            'password' => isset($DATABASE_URL['pass']) ? $DATABASE_URL['pass'] : null,
+            'url' => 'mysql://nhchc7chyv0fodhy:yqpusn7xo5z2m09w@ryfqldzbliwmq6g5.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/b4623i7z01wqrstf',
+            'host' => 'ryfqldzbliwmq6g5.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+            'port' => '3306',
+            'database' => 'b4623i7z01wqrstf',
+            'username' => 'nhchc7chyv0fodhy',
+            'password' => 'yqpusn7xo5z2m09w',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
