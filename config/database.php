@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Str;
 
-/* Update fil for conneccted to JAWSDB */
-$DATABASE_URL=parse_url('DATABASE_URL');
-
 return [
 
     /*
@@ -46,7 +43,7 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-        /* Update host,port,database,username,password pour for */
+        /* Config de connexion en dur */
         'mysql' => [
             'driver' => 'mysql',
             'url' => 'mysql://nhchc7chyv0fodhy:yqpusn7xo5z2m09w@ryfqldzbliwmq6g5.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/b4623i7z01wqrstf',
