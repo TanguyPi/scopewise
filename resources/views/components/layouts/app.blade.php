@@ -9,4 +9,6 @@
     <body>
         {{ $slot }}
     </body>
+
+
 </html>
