@@ -44,7 +44,7 @@
         <button id="getStarted" class="btn"> Get Started</button>
 
         <button id="learnMore"
-          class="block w-full rounded border border-indigo-500 px-12 py-3 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          class="block rounded border border-indigo-500 px-12 py-3 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
           >Learn More
         </button> 
 

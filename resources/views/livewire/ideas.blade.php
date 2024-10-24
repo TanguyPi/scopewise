@@ -4,10 +4,9 @@
 
 <div class="mt-4">
 
-    <h2 class="text-white font-semibold my-6">Vote for the next feature!</h2>
+    <h2 class="text-white font-semibold my-6 ml-3 md:m-0">Vote for the next feature!</h2>
 
         <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)">
-
 
         @if(session()->has('message'))
             <div class="alert alert-success mb-12">
