@@ -106,6 +106,13 @@ new class extends Component
             </x-responsive-nav-link>
         </div>
 
+         <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('new.project')" class="text-white flex" wire:navigate>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                {{ __('New Project') }}
+            </x-responsive-nav-link>
+        </div>
+
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
